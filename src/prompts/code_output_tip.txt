@@ -1,0 +1,11 @@
+The output of the reward function should consist of two items:
+    (1) the total reward,
+    (2) a dictionary of each individual reward component.
+The code output should be formatted as a python code string: "```python ... ```".
+
+Some helpful tips for writing the reward function code:
+    (1) You may find it helpful to apply transformations like torch.exp to the overall reward or its components in order to have reasonable values for the optimization procedure. This does not mean that you should bound the rewards as wrong bounds might hinder the learning algorithm from achieving the optimal policy.
+    (2) If you choose to transform a reward component, then you must also introduce a temperature parameter inside the transformation function; this parameter must be a named variable in the reward function and it must not be an input variable. Each transformed reward component should have its own temperature variable.
+    (3) If the task has a goal state, it might be helpful to add a bonus to the reward function if the agent achieves the goal (up to some tolerance).
+    (4) Make sure the type of each input variable is correctly specified; a float input variable should not be specified as torch.Tensor.
+    (5) Most importantly, the reward code's input variables must contain only attributes of the provided environment class definition (namely, variables that have prefix self.). Under no circumstance can you introduce new input variables. The input variables of the reward function must be existing variables (i.e., present in the provided code). If you require new variables to compute the reward (e.g., the velocity of the agent), these should be computed from existing variables.

@@ -1,0 +1,33 @@
+defaults:
+  - _self_
+  - env: ant
+  - override hydra/launcher: local
+  - override hydra/output: local
+
+seed: 42
+torch_deterministic: False
+
+# Weights and Biases
+use_wandb: False # whether to use wandb for logging
+wandb_username: calvinzhang # wandb username if logging with wandb
+wandb_project: orso # wandb project if logging with wandb
+
+# Video
+capture_video: False
+capture_video_freq: 4000
+capture_video_len: 500
+
+# Headless
+headless: True
+
+# LLM Parameters
+model: gpt-4o
+temperature: 1.0
+samples: 2
+suffix: GPT
+n_attempts: 10
+
+method: dense  # dense, sparse, eureka, orso
+sequential: False
+
+budget: 5  # 5, 10, 15
