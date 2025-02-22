@@ -51,13 +51,12 @@ An implementation of ORSO with a fixed set of reward functions and without langu
 # Citation
 If you find this code useful, please consider citing our paper:
 ```bibtex
-@misc{zhang2024orsoacceleratingrewarddesign,
-  title={ORSO: Accelerating Reward Design via Online Reward Selection and Policy Optimization}, 
+@inproceedings{
+  zhang2025orso,
+  title={{ORSO}: Accelerating Reward Design via Online Reward Selection and Policy Optimization},
   author={Chen Bo Calvin Zhang and Zhang-Wei Hong and Aldo Pacchiano and Pulkit Agrawal},
-  year={2024},
-  eprint={2410.13837},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2410.13837}, 
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=0uRc3CfJIQ}
 }
 ```
